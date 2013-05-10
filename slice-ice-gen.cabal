@@ -1,0 +1,25 @@
+name:                slice-ice-gen
+version:             0.1.0.0
+synopsis:            Generate C++ skeletons from slice files
+description:         Generate C++ skeletons from slice files
+homepage:            https://github.com/paulkoerbitz/slice-ice-gen
+license:             BSD3
+license-file:        LICENSE
+author:              Paul Koerbitz
+maintainer:          paul.koerbitz@gmail.com
+copyright:           Paul Koerbitz 2013
+category:            Development
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable slice-ice-gen
+  main-is:             slice-ice-gen.hs
+  build-depends:       base >=4.5 && < 5,
+                       bytestring,
+                       cmdargs,
+                       directory,
+                       filepath,
+                       containers,
+                       transformers >= 0.3,
+                       language-slice >= 0.1
+  hs-source-dirs:      src
